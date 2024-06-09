@@ -78,17 +78,13 @@ This script processes a video feed to detect and count available parking spots:
 
 Press 'q' to quit the video feed.
 
+### Performance Optimization:
+
+#### Selective Frame Processing 
+To enhance performance and reduce computational load, the script captures and processes one frame every 60 frames. This frequency is based on the observation that most parking spots do not change status frequently, thus eliminating the need for constant checking.
+#### Change Detection
+Integrated a function to detect significant differences between the current state and the last recorded state of each parking spot. This method ensures that the system only updates spot statuses when a noticeable change is detected, further optimizing performance.
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
-
-```
-
-### Notes:
-
-- **[repository-url]** and **[repository-directory]** need to be replaced with the actual URL of your repository and the directory name respectively.
-- Make sure all dependencies are listed in your `requirements.txt`.
-- If `preparing_model.py` and `visualizing_parking.py` depend on specific versions of Python or packages, note those requirements explicitly in the setup instructions.
-
-This README provides a comprehensive guide to setting up, understanding, and using your project, along with a detailed explanation of each script's functionality.
-```
