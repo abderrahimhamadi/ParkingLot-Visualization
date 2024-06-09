@@ -40,6 +40,8 @@ pip install -r requirements.txt
 
 ```
 
+Link to data used for training and testing the model that Achieved **100 % Accuracy score** :  https://drive.google.com/file/d/13lWZFPajKRvD4LD1HDQi8KdpH2djsCgp/view?usp=sharing
+
 ## Usage
 
 ### Model Preparation
